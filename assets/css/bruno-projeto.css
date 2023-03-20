@@ -25,6 +25,11 @@
 }
 
 @media (min-width: 792px) {
+
+    .carousel-inner {
+        height: 430px;
+    }
+
     #container-query {
         display: flex;        
         flex-wrap: nowrap;
