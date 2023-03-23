@@ -24,8 +24,12 @@
         margin-left: .5em;
 }
 
-@media (min-width: 792px) {
+.newslater > p {
+    font-family: 'Stick No Bills', sans-serif;
+}
 
+@media (min-width: 792px) {
+    
     .carousel-inner {
         height: 430px;
     }
@@ -35,10 +39,20 @@
         flex-wrap: nowrap;
         width: 650px;
         padding: 0;
-        justify-content: center;                 
+        justify-content: center;               
     }
+    
+    
     #container-mais-vendidos {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .newslater .form-floating {
+        width: 35%;
+        margin: 0 auto;
     }
     
 }

@@ -12,22 +12,25 @@
 <body>
   <!--======================================================================================  INÍCIO PRIMEIRO NAVBAR  -->
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: brown;">
+    <nav class="navbar navbar-dark fixed-top" style="background-color: brown;">
       <div class="container-fluid">            
-        <a class="navbar-brand" href="#"> BR Kimonos</a>
+        <a class="navbar-brand" href="#"> BR Kimonos</a>        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon "></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="#">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Produtos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg> Carrinho</a>
+              
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -64,69 +67,41 @@
 <!--====================================================================================== INÍCIO ITEMS MAIS VENDIDOS  -->
 
 <div class="title-bar">
-  <h2>Mais Vendidos</h2>
+  <span class="fs-2">Mais Vendidos</span>
   <hr>
 </div>
 
-<div class="container-fluid m-0 mt-3 mb-5 p-0" id="container-mais-vendidos">
+<!-- CONTAINER 1 DE PRODUTOS MAIS VENDIDOS -->
 
-    <div class="d-flex text-center flex-md-wrap">
+<div class="container-fluid justify-content-evenly mb-0" id="container-mais-vendidos">
 
-        <div class="col p-1 img-hover  mb-4" id="container-img">
-          <img src="assets/produtos/caneleira001.png" class="img-fluid h-75" alt="Caneleira Protetora">
-          <br>
-          <span class="text-center">Caneleira Muay Thai</span> 
-          <br>
-          <span class="text-center"> R$ 56,00</span>
-          <br>
-          <button type="button" class="btn btn-success">Comprar</button>
-        </div>
-
-        <div class="col p-1 img-hover mb-4">
-          <img src="assets/produtos/kimono001.png" class="img-fluid h-75" alt="Kimono JiuJitsu">
-          <br>
-          <span class="text-center">Kimono JiuJitsu Cinza</span> 
-          <br>
-          <span class="text-center"> R$ 370,00</span>
-          <br>
-          <button type="button" class="btn btn-success">Comprar</button>
-        </div>
-
-    </div>
-
-          <!-- ##################### -->
-
-    <div class="d-flex text-center flex-md-wrap">
+    <div class="d-flex text-center flex-md-wrap"> <!-- DIV 1 DE PRODUTOS MAIS VENDIDOS -->
 
       <div class="col p-1 img-hover mb-4">
-        <img src="assets/produtos/kimono002.png" class="img-fluid h-75" alt="Kimono JiuJitsu">
+        <img src="assets/produtos/kimono002.png" class="img-fluid h-50 mt-5" alt="Kimono JiuJitsu">
         <br>
         <span class="text-center">Kimono Jiu-Jitsu Branco</span> 
         <br>
         <span class="text-center"> R$ 285,00</span>
         <br>
-        <button type="button" class="btn btn-success">Comprar</button>
+        <button type="button" class="btn btn-success mt-3">Comprar</button>
       </div>
 
       <div class="col p-1 img-hover mb-4">
-        <img src="assets/produtos/luva-boxe001.png" class="img-fluid h-75" alt="Luva de Boxe">
+        <img src="assets/produtos/luva-boxe001.png" class="img-fluid h-50 mt-5" alt="Luva de Boxe">
         <br>
         <span class="text-center">Luva de Boxe</span> 
         <br>
         <span class="text-center"> R$ 125,00</span>
         <br>
-        <button type="button" class="btn btn-success">Comprar</button>
+        <button type="button" class="btn btn-success mt-3">Comprar</button>
       </div>
-
     </div>
 
-          <!-- ##################### -->    
-
-
-    <div class="d-flex text-center flex-md-wrap">
+    <div class="d-flex text-center flex-md-wrap"> <!-- DIV 2 DE PRODUTOS MAIS VENDIDOS-->
 
       <div class="col p-1 img-hover mb-4">
-        <img src="assets/produtos/protetor001.png" class="img-fluid h-75" alt="Protetor de Cabeça">
+        <img src="assets/produtos/protetor001.png" class="img-fluid h-50 mt-5" alt="Protetor de Cabeça">
         <br>
         <span class="text-center">Protetor de Cabeça</span> 
         <br>
@@ -136,18 +111,84 @@
       </div>
       
       <div class="col p-1 img-hover mb-4">
-        <img src="assets/produtos/kimono003.png" class="img-fluid h-75" alt="Kimono JiuJitsu">
+        <img src="assets/produtos/kimono003.png" class="img-fluid h-50 mt-5" alt="Kimono JiuJitsu">
         <br>
         <span class="text-center">Kimono Jiu-Jitsu Azul</span> 
         <br>
         <span class="text-center"> R$ 37,00</span>
         <br>
-        <button type="button" class="btn btn-success">Comprar</button>
+        <button type="button" class="btn btn-success mt-3">Comprar</button>
       </div>
+    </div>  
+</div>
 
+<!-- CONTAINER 2 DE PRODUTOS MAIS VENDIDOS -->
+
+<div class="container-fluid justify-content-evenly mb-0" id="container-mais-vendidos">
+
+  <div class="d-flex text-center flex-md-wrap">  <!-- DIV 1 DE PRODUTOS MAIS VENDIDOS -->
+
+    <div class="col p-1 img-hover mb-4">
+      <img src="assets/produtos/kimono002.png" class="img-fluid h-50 mt-5" alt="Kimono JiuJitsu">
+      <br>
+      <span class="text-center">Kimono Jiu-Jitsu Branco</span> 
+      <br>
+      <span class="text-center"> R$ 285,00</span>
+      <br>
+      <button type="button" class="btn btn-success mt-3">Comprar</button>
     </div>
 
-          <!-- ##################### -->        
+    <div class="col p-1 img-hover mb-4">
+      <img src="assets/produtos/luva-boxe001.png" class="img-fluid h-50 mt-5" alt="Luva de Boxe">
+      <br>
+      <span class="text-center">Luva de Boxe</span> 
+      <br>
+      <span class="text-center"> R$ 125,00</span>
+      <br>
+      <button type="button" class="btn btn-success mt-3">Comprar</button>
+    </div>
+  </div>
+
+  <div class="d-flex text-center flex-md-wrap">  <!-- DIV 2 DE PRODUTOS MAIS VENDIDOS-->
+
+    <div class="col p-1 img-hover mb-4">
+      <img src="assets/produtos/protetor001.png" class="img-fluid h-50 mt-5" alt="Protetor de Cabeça">
+      <br>
+      <span class="text-center">Protetor de Cabeça</span> 
+      <br>
+      <span class="text-center"> R$ 98,00</span>
+      <br>
+      <button type="button" class="btn btn-success">Comprar</button>
+    </div>
+    
+    <div class="col p-1 img-hover mb-4">
+      <img src="assets/produtos/kimono003.png" class="img-fluid h-50 mt-5" alt="Kimono JiuJitsu">
+      <br>
+      <span class="text-center">Kimono Jiu-Jitsu Azul</span> 
+      <br>
+      <span class="text-center"> R$ 37,00</span>
+      <br>
+      <button type="button" class="btn btn-success mt-3">Comprar</button>
+    </div>
+  </div>  
+</div>
+
+<!-- #######################   NEWSLATER ÁREA -->
+
+<div class="container-fluid text-center newslater" style="background-color: rgba(207, 162, 162, 0.274);">
+  <img class="mt-4" src="assets/images/message_icon.png" alt="">
+  <p class="fs-3 mt-3">CADASTRE-SE PARA RECEBER MAIS PROMOÇÕES</p>
+  <div class="form-floating p-2">
+    <input type="email" class="form-control" id="floatingInput" placeholder="nome@exemplo.com">
+    <label for="floatingInput">Insira seu e-mail</label>
+  </div>
+  <button type="button" class="btn btn-success mb-4">Cadastrar</button>
+</div>
+
+<div class="container-fluid text-center mt-5 mb-5">
+  <img src="assets/images/icon-punch.png" alt=""> <br>
+  <span class="fw-bold">Br Kimonos</span> <br>
+  <span>Todos os Direitos Reservados &copy</span>
 
 </div>
 
